@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bijay Shaw </title>
+    <style>
+        body{
+            background-image: url('https://images.unsplash.com/photo-1641230620922-78eb471d6046?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80');
+        }
+        .container{
+            margin: auto;
+            text-align: center;
+        }
+        .header h1{
+            color: beige;
+        }
+        .main{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+        .box{
+            height: 50px;
+            width: 50px;
+            border: 1px solid black;
+            padding: 10px;
+            margin: 30px;
+            text-align: center;
+        }
+        .dice-era img{
+            height: 100px;
+            width: 100px;
+        }
+        h2{
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+  <div class="container">
+      <div class="header">
+        <h1>Roll The Dice </h1>
+        <div class="dice-era">
+            <img src="images/1.jfif" alt="">
+        </div>
+        <!-- <button type="button" onclick=playgame() >Play</button> -->
+      </div>
+      <div class="main">
+        <button id="1" class="box" onclick=playgame() >1</button>
+        <button id="2" class="box" onclick=playgame() >2</button>
+        <button id="3" class="box" onclick=playgame() >3</button>
+        <button id="4" class="box" onclick=playgame() >4</button>
+        <button id="5" class="box" onclick=playgame()>5</button>
+        <button id="6" class="box" onclick=playgame()>6</button>
+      </div>
+      <h2 >Loading Game will start in ... <p>Seconds</p> </h2>
+    </div>
+  <script src="script.js"></script>
+</body>
+</html>
